@@ -20,7 +20,7 @@ Estudiante de Ingeniería de Sistemas y desarrollador full stack. Construyo soft
 
 ## Proyectos destacados: 
 
-**SoftVia POS**
+**SoftVia POS:**
 Sistema de punto de venta para comercios: ventas, inventario, caja, roles y reportes.
 
 - **API REST** con Spring Boot 3.4, JPA/Hibernate y documentación OpenAPI.
@@ -32,7 +32,7 @@ Sistema de punto de venta para comercios: ventas, inventario, caja, roles y repo
 - **Observabilidad:** métricas con Micrometer, Prometheus y OpenTelemetry.
 - **Exportación** de reportes a Excel, CSV y PDF.
 
-**DGII RNC API**
+**DGII RNC API:**
 API REST para consultar contribuyentes de la DGII (República Dominicana) por RNC o cédula, y buscarlos por nombre.
 
 Sincronización diaria del archivo oficial de la DGII a PostgreSQL (cerca de 791 mil contribuyentes).
@@ -43,7 +43,7 @@ Empaquetado con Docker (build multietapa) y gestión de dependencias con uv.
 Pruebas con pytest, tipado estricto con mypy y linting con Ruff.
 Servicio no oficial: los datos provienen de publicaciones de la DGII.
 
-**ArqVia CRM**
+**ArqVia CRM:**
 CRM SaaS pensado para firmas de arquitectos que hoy trabajan con Excel, con un núcleo reutilizable para otras industrias. Actualmente en fase de desarrollo.
 
 Backend en Spring Boot 3.5 y Java 21, con Spring Security y validación.
