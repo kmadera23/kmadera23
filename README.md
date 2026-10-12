@@ -32,24 +32,23 @@ Sistema de punto de venta para comercios: ventas, inventario, caja, roles y repo
 - **Observabilidad:** métricas con Micrometer, Prometheus y OpenTelemetry.
 - **Exportación** de reportes a Excel, CSV y PDF.
 
-**DGII RNC API:**
-API REST para consultar contribuyentes de la DGII (República Dominicana) por RNC o cédula, y buscarlos por nombre.
+**DGII RNC API:** API REST para consultar contribuyentes de la DGII (República Dominicana) por RNC o cédula, y buscarlos por nombre.
 
-Sincronización diaria del archivo oficial de la DGII a PostgreSQL (cerca de 791 mil contribuyentes).
-Consulta en vivo opcional contra el portal, con caché y circuit breaker.
-Autenticación por API key con límite de peticiones por clave.
-Flask con documentación Swagger, migraciones con Alembic y scheduler para la sincronización.
-Empaquetado con Docker (build multietapa) y gestión de dependencias con uv.
-Pruebas con pytest, tipado estricto con mypy y linting con Ruff.
-Servicio no oficial: los datos provienen de publicaciones de la DGII.
+- **Datos locales:** sincronización diaria del archivo oficial de la DGII a PostgreSQL (cerca de 791 mil contribuyentes).
+- **Consulta en vivo:** complemento opcional contra el portal de la DGII, con caché y circuit breaker.
+- **Seguridad:** autenticación por API key con límite de peticiones por clave.
+- **API:** Flask con documentación Swagger, migraciones con Alembic y scheduler para la sincronización.
+- **Despliegue:** empaquetado con Docker (build multietapa) y gestión de dependencias con uv.
+- **Calidad:** pruebas con pytest, tipado estricto con mypy y linting con Ruff.
 
-**ArqVia CRM:**
-CRM SaaS pensado para firmas de arquitectos que hoy trabajan con Excel, con un núcleo reutilizable para otras industrias. Actualmente en fase de desarrollo.
+**ArqVia CRM:** CRM SaaS pensado para firmas de arquitectos que hoy trabajan con Excel, con un núcleo reutilizable para otras industrias. Actualmente en fase de desarrollo.
 
-Backend en Spring Boot 3.5 y Java 21, con Spring Security y validación.
-Migraciones con Flyway sobre PostgreSQL y pruebas de integración con Testcontainers.
-Frontend en React 19 con TypeScript y Vite, probado con Vitest y Testing Library.
-Entorno local reproducible con Docker Compose.
+- **Backend:** Spring Boot 3.5 y Java 21, con Spring Security y validación.
+- **Base de datos:** migraciones con Flyway sobre PostgreSQL.
+- **Frontend:** React 19 con TypeScript y Vite.
+- **Calidad:** pruebas de integración con Testcontainers en el backend y Vitest con Testing Library en el frontend.
+- **Entorno:** local reproducible con Docker Compose.
+
 
 
 ## Cómo trabajo
